@@ -1,5 +1,5 @@
+import { Trash } from "lucide-react";
 import React from "react";
-import DeleteIcon from '@material-ui/icons/Delete';
 
 function Note(props) {
   function handleClick() {
@@ -10,7 +10,7 @@ function Note(props) {
     <div className="note" key={props.id}>
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <button onClick={handleClick}><DeleteIcon /></button>
+      <button onClick={handleClick}><Trash /></button>
     </div>
   );
 }

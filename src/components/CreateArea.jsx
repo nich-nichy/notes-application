@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import AddIcon from "@material-ui/icons/Add";
-
+import { Plus } from 'lucide-react'
 
 function CreateArea(props) {
   const [isExpanded, setExpanded] = useState(false);
@@ -55,7 +54,7 @@ function CreateArea(props) {
           rows={isExpanded ? 3 : 1}
         />
         <button onClick={submitNote}>
-          <AddIcon />
+          <Plus />
         </button>
 
       </form>
