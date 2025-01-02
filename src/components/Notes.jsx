@@ -36,7 +36,7 @@ const Notes = () => {
                     throw new Error("Failed to save the note in the database.");
                 }
             } catch (error) {
-                console.error("Error saving note:", error);
+                console.log("Error saving note:", error);
                 window.alert("❌ Failed to save the note. Please try again.");
             }
         } else {
