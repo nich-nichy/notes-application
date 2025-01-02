@@ -59,7 +59,7 @@ const Notes = () => {
                 throw new Error("Failed to update the notes in the database.");
             }
         } catch (error) {
-            console.error("Error deleting note:", error);
+            console.log("Error deleting note:", error);
             window.alert("❌ Failed to delete the note. Please try again.");
         }
     }
